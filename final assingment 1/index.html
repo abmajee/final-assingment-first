@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navigation{
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+        }
+        .links1{
+            padding: 20px 20px;
+            margin: 60px 60px;
+            text-decoration: none;
+            justify-content: space-between;
+        }
+        .links1 :hover{
+            color: lightblue;
+        }
+        .buttion1{
+            width: 100px;
+           border: 1px solid black;
+        }
+        .heading1{
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+        }
+        .heading2{
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+        }
+        .loren{
+            text-align: center;
+            align-items: center;
+        }
+        .visit{
+            display: flex;
+            justify-content: center;
+            color: blue;
+        }
+        .visit :hover{
+            color: black;
+            background-color: yellow;
+        }
+        .contaner1{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .card1{
+            height: 200px;
+            width: 350px;
+            border: 1px solid black;
+            border: none;
+        }
+
+        .card1>h3{
+            text-align: center;
+            align-items: center;
+            padding: 20px 20px;
+        }
+        .card1>p{
+            align-items: center;
+            text-align: center;
+
+        }
+        .card1>i{
+            padding-left: 150px;
+        }
+        .card2{
+            height: 200px;
+            width: 350px;
+            border: 1px solid black;
+            border: none;
+
+        }
+        .card2>h3{
+            text-align: center;
+            align-items: center;
+            padding: 20px 20px;
+        }
+        .card2>p{
+            align-items: center;
+            text-align: center;
+
+        }
+        .card2>i{
+            padding-left: 150px;
+        }
+        .card3{
+            height: 200px;
+            width: 350px;
+            border: 1px solid black;
+            border: none;
+
+        }
+        .card3>h3{
+            text-align: center;
+            align-items: center;
+            padding: 20px 20px;
+        }
+        .card3>p{
+            align-items: center;
+            text-align: center;
+
+        }
+        .card3>i{
+            padding-left: 150px;
+        }
+
+        .view{
+            display: flex;
+            justify-content: center;
+            color: blue;
+        }
+        .view :hover{
+            color: black;
+            background-color: yellow;
+        }
+        .logospurm{
+            display: flex;
+            justify-content: space-around;
+        }
+        .logopart1{
+            font-size: 25px;
+        }
+        .logopart2{
+            font-size: 25px;
+        }
+        .logopart3{
+            font-size: 25px;
+        }
+        .contaner2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .experieance{
+            height: 350px;
+            width: 400px;
+            background-color: rgb(185, 169, 169);
+        }
+        .image1>img{
+            height: 350px;
+            width: 400px;
+        }
+        h5{
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        .read{
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .image2>img{
+            width: 1350px;
+            height: 400px;
+        }
+        .number{
+            align-items: center;
+            text-align: center;
+        }
+        .contaner3{
+            display: flex;
+            justify-content: space-around;
+        }
+        .onefifty{
+            height: 250px;
+            width: 250px;
+            /* border: 1px solid black; */
+        }
+        .onefifty>h1{
+            font-size: 50px;
+            padding-left: 80px;
+            color: blue;
+        }
+        .onefifty>p{
+            text-align: center;
+            text-align: center;
+        }
+        .twohuandrade{
+            height: 250px;
+            width: 250px;
+            /* border: 1px solid black; */
+        }
+        .twohuandrade>h1{
+            font-size: 50px;
+            padding-left: 80px;
+            color: blue;
+        }
+        .twohuandrade>p{
+            text-align: center;
+            text-align: center;
+        }
+        .threehandrade{
+            height: 250px;
+            width: 250px;
+            /* border: 1px solid black; */
+        }
+        .threehandrade>h1{
+            font-size: 50px;
+            padding-left: 80px;
+            color: blue;
+        }
+        .threehandrade>p{
+            text-align: center;
+            text-align: center;
+        }
+        .hours1{
+                display: flex;
+                justify-content: space-around;
+        }
+        .room1>img{
+                height: 300px;
+                width: 300px;
+        }
+        .room2>img{
+                height: 300px;
+                width: 300px;
+        }
+        .room3>img{
+                height: 300px;
+                width: 300px;
+        }
+        .house2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .room4>img{
+                height: 300px;
+                width: 300px;
+        }
+        .room5>img{
+                height: 300px;
+                width: 300px;
+        }
+        .room6>img{
+                height: 300px;
+                width: 300px;
+        }
+        .testimonal>h1{
+                text-align: center;
+                align-items: center;
+        }
+        .testimonal>p{
+            text-align: center;
+            align-items: center;
+        }
+        .man1{
+            height: 400px;
+            width: 350px;
+        }
+        .man1>img{
+            height: 100px;
+            width: 100px;
+            border-radius: 360px;
+            align-items: center;
+            text-align: center;
+        }
+        .man1>h1{
+            text-align: center;
+            align-items: center;
+        }
+        .man1>p{
+            align-items: center;
+            text-align: center;
+        }
+        .girl1{
+            height: 400px;
+            width: 350px;
+        }
+        .girl1>img{
+            height: 100px;
+            width: 100px;
+            border-radius: 360px;
+            align-items: center;
+            text-align: center;
+        }
+        .girl1>h1{
+            text-align: center;
+            align-items: center;
+        }
+        .girl1>p{
+            align-items: center;
+            text-align: center;
+        }
+        .review1{
+            display: flex;
+            justify-content: space-around;
+        }
+         .man2{
+            height: 400px;
+            width: 350px;
+        }
+        .man2>img{
+            height: 100px;
+            width: 100px;
+            border-radius: 360px;
+            align-items: center;
+            text-align: center;
+        }
+        .man2>h1{
+            text-align: center;
+            align-items: center;
+        }
+        .man2>p{
+            align-items: center;
+            text-align: center;
+        }
+        .girl2{
+            height: 400px;
+            width: 350px;
+        }
+        .girl2>img{
+            height: 100px;
+            width: 100px;
+            border-radius: 360px;
+            align-items: center;
+            text-align: center;
+        }
+        .girl2>h1{
+            text-align: center;
+            align-items: center;
+        }
+        .girl2>p{
+            align-items: center;
+            text-align: center;
+        }
+        .review2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .wife{
+            height: 400px;
+            width: 500px;
+        }
+        .wife>p{
+            text-align: center;
+            align-items: center;
+        }
+        .wife>h1{
+            text-align: center;
+            align-items: center;
+        }
+        .wife>button{
+            align-items: center;
+        }
+        .lastimage{
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(204, 200, 200);
+        }
+        .fpart1{
+            height: 200px;
+            width: 200px;
+        }
+        .fpart2{
+            height: 200px;
+            width: 200px;
+        }
+        .fpart3{
+            height: 200px;
+            width: 200px;
+        }
+        .fpart4{
+            height: 200px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">
+          <h1>FENNEY GROUP</h1>
+        </div>
+        <div class="links1">
+            <a href="HOME">HOME</a>
+            <a href="ABOUT">ABOUT</a>
+            <a href="SERVICE">SERVICE</a>
+            <a href="CONTACT">CONTACT</a>
+        </div>
+        <div class="buttion1">
+                <button>GET QUOTE</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="heading1">Heating and Air</h1>
+    <h1 class="heading2">Conditioning Specialist</h1>
+    <br>
+    <br>
+    <h2 class="loren">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, uctus nec ullamcorper mattis, pulvinar dapibus leo.</h2>
+    <br>
+    <br>
+   
+<div class="visit">
+    <div class="call">
+        <button>call for visit</button>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="contaner1">
+    <div class="card1">
+        <i class="fa-solid fa-gear"></i>
+        <h3>Heating System Installation</h3>
+        <p>Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper
+        mattis, pulvinar dapibus leo.
+        </p>
+    </div>
+    <div class="card2">
+        <i class="fa-solid fa-plus"></i>
+        <h3>Air Conditioning
+                Repair</h3>
+        <p>Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper
+        mattis, pulvinar dapibus leo.
+        </p>
+    </div>
+    <div class="card3">
+        <i class="fa-solid fa-republican"></i>
+        <h3>Air Conditioning
+            Service</h3>
+        <p>Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper
+        mattis, pulvinar dapibus leo.
+        </p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="view">
+    <div class="more">
+        <button>call for visit</button>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="logospurm">
+       <div class="logopart1">
+            <h4>logospurm</h4>
+       </div>
+<div class="logopart2">
+           <h4>logospurm</h4>
+</div>
+<div class="logopart3">
+   <h4>logospurm</h4>
+</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="contaner2">
+        <div class="experieance">
+            <br>
+            <br>
+                <h1>
+                Experience Quality Air
+                Conditioning Service in
+                Broklyn New York
+                </h1>
+                <br>
+                <br>
+                <br>
+                <p>
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+                arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor
+                risus.
+            </p>
+        </div>
+        <div class="image1">
+        <img src="https://images.unsplash.com/photo-1652715564391-38cc4475b7f5?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<h5>Ac repair and installation
+    </h5>
+    <h5>
+    service in your locality
+</h5>
+<br>
+<br>
+<br>
+<h5 class="read">read more</h5>
+<br>
+<br>
+<br>
+<br>
+<div class="image2">
+<img src="https://media.istockphoto.com/id/2175814543/photo/3d-rendering-of-game-remote-on-blue-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=9GEK8zVts22XoZ3iBKFIPsoCZf_Gt5rNjYWwhXm6u0Q=" alt="">
+<br>
+<br>
+<br><div class="number">
+    <h1>Number Speakes</h1>
+    <br>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+    <br>
+    luctus nec ullamcorper mattis, pulvinar dapibus leo.
+    </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="contaner3">
+    <div class="onefifty">
+        <h1>150</h1>
+        <p>Air Conditioning Repairs
+            <br>
+        and Install
+        </p>
+    </div>
+    <div class="twohuandrade">
+        <h1>100</h1>
+    <p>Air Conditioning Repairs
+            <br>
+        and Install
+        </p>
+    </div>
+    <div class="threehandrade">
+        <h1>200</h1>
+    <p>Air Conditioning Repairs
+            <br>
+        and Install
+        </p>
+    </div>
+</div>
+<div class="hours1">
+    <div class="room1">
+        <img src="https://images.unsplash.com/photo-1568842377941-63a9550044bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9vbSUyMHBpY3R1cmVzfGVufDB8fDB8fHww" alt="">
+    </div>
+    <div class="room2">
+<img src="https://plus.unsplash.com/premium_photo-1664392049725-af72dc87def5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cm9vbSUyMHBpY3R1cmVzfGVufDB8fDB8fHww" alt="">
+    </div>
+    <div class="room3">
+<img src="https://images.unsplash.com/photo-1562169819-9f9031fedd3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9vbSUyMHBpY3R1cmVzfGVufDB8fDB8fHww" alt="">
+    </div>
+</div>
+<div class="house2">
+    <div class="room4">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9vbXN8ZW58MHx8MHx8fDA%3D" alt="">
+    </div>
+    <div class="room5">
+        <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9vbXN8ZW58MHx8MHx8fDA%3D" alt="">
+    </div>
+    <div class="room6">
+        <img src="https://plus.unsplash.com/premium_photo-1675615667752-2ccda7042e7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9vbXN8ZW58MHx8MHx8fDA%3D" alt="">
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="testimonal">
+    <h1>Testimonials</h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+    <br>
+    luctus nec ullamcorper mattis, pulvinar dapibus leo.
+    </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="review1">
+    <div class="man1">
+        <img src="https://plus.unsplash.com/premium_photo-1682088935745-089fbb1dc447?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwcGhvdG98ZW58MHx8MHx8fDA%3D" alt="">
+        <br>
+        <br>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <h1>Jim Doe</h1>
+
+    </div>
+    <div class="girl1">
+        <img src="https://images.unsplash.com/photo-1626709741787-290ff342da6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMHBob3RvfGVufDB8fDB8fHww" alt="">
+        <br>
+        <br>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <h1>Jim Doe</h1>
+    </div>
+</div>
+<div class="review2">
+    <div class="man2">
+        <img src="https://plus.unsplash.com/premium_photo-1682088935745-089fbb1dc447?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwcGhvdG98ZW58MHx8MHx8fDA%3D" alt="">
+        <br>
+        <br>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <h1>Jim Doe</h1>
+
+    </div>
+    <div class="girl2">
+        <img src="https://images.unsplash.com/photo-1626709741787-290ff342da6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMHBob3RvfGVufDB8fDB8fHww" alt="">
+        <br>
+        <br>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <h1>Jim Doe</h1>
+    </div>
+</div>
+<div class="lastimage">
+    <div class="husband">
+        <img src="https://plus.unsplash.com/premium_photo-1661589307132-6dccb00acd8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHVzYmFuZCUyMGFuZCUyMHdpZmUlMjB0b2dldGhlcnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    </div>
+    <div class="wife">
+            <p>Why Choose Us?</p>
+            <br>
+            <br>
+            <h1>Focus On Getting Our
+                <br>
+                Jobs Done
+            </h1>
+            <br>
+            <br>
+            <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur
+            <br>
+            arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget
+            <br>
+            tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.
+            </p>
+            <br>
+            <br>
+            <div class="free">
+                <Button>free construction</Button>
+            </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="footer">
+<div class="fpart1">
+<h1>ABOUT</h1>
+<p>2307 Beverley Rd Brooklyn, New York
+    <br>
+    info@example.com
+    <br>
+    + (0712) 819 79 555
+</p>
+</div>
+<div class="fpart2">
+<h1>conserting</h1>
+<p>2307 Beverley Rd Brooklyn, New York
+    <br>
+    info@example.com
+    <br>
+    + (0712) 819 79 555
+</p>
+</div>
+<div class="fpart3">
+<h1>heating</h1>
+<p>2307 Beverley Rd Brooklyn, New York
+    <br>
+    info@example.com
+    <br>
+    + (0712) 819 79 555
+</p>
+</div>
+<div class="fpart4">
+<h1>special</h1>
+<p>2307 Beverley Rd Brooklyn, New York
+    <br>
+    info@example.com
+    <br>
+    + (0712) 819 79 555
+</p>
+</div>
+<br>
+<br>
+<br>
+</div>
+</body>
+</html>
